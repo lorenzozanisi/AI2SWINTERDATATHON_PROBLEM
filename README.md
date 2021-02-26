@@ -10,12 +10,12 @@ Collectors of cryptoart is intunded with choices. Matching consumers with the mo
 
 Dataset contains three files:
 
-* **train.csv and test.csv** contains information about the buyers and their affinity on the artwork
+* **train.csv and test.csv** contain information about the buyers and their affinity on the artwork
     * <font color='blue'>*buyer:*</font> the Ethereum address of the buyer of the artwork
     *  <font color='blue'>*tokenId:*</font> the identification number of the artwork
-    *  <font color='blue'>*affinity:*</font> The target variable that we want you to predict. Varible indicates the value of the artwork as well as interest of the collector to the related artwork.
+    *  <font color='blue'>*affinity:*</font> the target variable that we want you to predict. The variable represents the value of the artwork as well as interest of the collector to the related artwork.
     
-* **tokens.csv:** contains information about artworks, including text metadata like title, description and tags IPFS links addressing the artwork's media object.
+* **tokens.csv:** contains information about artworks, including text metadata like title, description, tags and IPFS links addressing the artwork's media object.
     * <font color='blue'>*name:*</font> the name of the artwork (given by the creator)
     * <font color='blue'>*description:*</font> the description of the artwork (given by the creator)
     * <font color='blue'>*tags:*</font> the tags of the artwork (given by the creator)
@@ -27,7 +27,7 @@ Dataset contains three files:
     * <font color='blue'>*creator:*</font> the Ethereum address of the creator (the artist) of the artwork
     * <font color='blue'>*tokenId:*</font> the identification number of the artwork
 
-    * Note: attributes media, type, size, and dimensions are only available for relatively new artworks. Moreover, attributes timestamp and transactionId are not available for artworks that have been burned (deleted) by the artist.
+    * Note: attributes media, type, size, and dimensions are only available for relatively new artworks.
 
 # Problem Description
 
@@ -37,7 +37,7 @@ Goal of this problem is predicting `affinity` of the `buyer` to related item (ar
 
 Submissions are evaluated on [Root-Mean-Squared-Error (RMSE)](https://en.wikipedia.org/wiki/Root-mean-square_deviation) between the predicted value and the observed affinity. Top 10 will be found by using RMSE and the judges will choose the winner by evaluating their submission which includes the code, short report and predictions.
 
-# Useful Sources
+# CryptoArt Useful Sources
 
 https://en.wikipedia.org/wiki/Crypto_art
 
